@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&family=Oswald:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: color, background-color 0.2s ease-in;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #134E5E;
+    background: -webkit-linear-gradient(to right, #71B280, #134E5E);
+    background: linear-gradient(to right, #71B280, #134E5E);
+}
+
+#calculator {
+    background-color: #FADDB7;
+    width: 18rem;
+    height: 30rem;
+    box-shadow: 0px 0px 45px 15px rgba(0, 0, 0, 0.15);
+}
+
+#top {
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-weight: bold;
+    color: #F5B461;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#change-theme {
+    cursor: pointer;
+}
+
+#numbers {
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #F19927;
+    padding: 0 1rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+#panel {
+    height: 20%;
+    font-size: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #F19927;
+    font-family: 'Oswald', sans-serif;
+    padding: 1rem;
+}
+
+/* Here, instead of "flex", we'll use "grid". */
+#buttons {
+    height: 55%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn {
+    background-color: #F5B461;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.backspace {
+    /* I did this to override Google Icon's style */
+    display: flex !important;
+}
+
+.tall {
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column: 4;
+}
+
+.btn:hover {
+    filter: brightness(105%);
+}
+
+.btn:active {
+    filter: brightness(95%);
+}
+
+/* Now, I almost forgot! We need to set the custom icons! */

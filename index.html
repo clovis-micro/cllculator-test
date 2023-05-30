@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="calculator">
+        <div id="top">
+            <span>CALCULATOR</span>
+            <span
+                title="Change Theme"
+                id="change-theme"
+                class="material-symbols-outlined"
+            >
+                palette
+            </span>
+        </div>
+        <!-- This div will store the numbers pressed by the user -->
+        <div id="numbers"></div>
+        
+        <!-- This div will store the result -->
+        <div id="panel">0</div>
+
+        <!-- This div will store all buttons -->
+        <div id="buttons">
+            <div class="btn clear">C</div>
+            <div class="btn clear-panel">CE</div>
+            <div class="btn divide">/</div>
+            <div class="btn multiply">x</div>
+            <div class="btn number">7</div>
+            <div class="btn number">8</div>
+            <div class="btn number">9</div>
+            <div class="btn subtract">-</div>
+            <div class="btn number">4</div>
+            <div class="btn number">5</div>
+            <div class="btn number">6</div>
+            <div class="btn add">+</div>
+            <div class="btn number">1</div>
+            <div class="btn number">2</div>
+            <div class="btn number">3</div>
+            <div class="btn tall equals">=</div>
+            <div class="btn number">0</div>
+            <div class="btn dot">.</div>
+            <div class="backspace btn material-symbols-outlined">
+                backspace
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
